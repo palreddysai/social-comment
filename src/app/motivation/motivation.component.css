@@ -1,0 +1,124 @@
+/* #2C323B */
+section {
+  padding: 32px;
+}
+.motivation {
+  background-color: #2c323b;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.logo img {
+  border-radius: 14px;
+  margin-bottom: 60px;
+}
+/**/
+.moti_gallery {
+  background-color: #1f242c;
+  border-radius: 20px;
+}
+.profile-picture {
+  display: flex;
+}
+.profile-picture img {
+  border-radius: 50%;
+}
+.profile-picture p {
+  padding: 8px;
+  font-size: 20px;
+}
+.moto_list {
+  margin-top: 42px;
+}
+.moto_list ul li {
+  padding: 10px 0;
+}
+.moto_list ul li a {
+  color: #c4c0ca;
+  font-size: 20px;
+}
+.moto_list ul li a:hover {
+  color: #fafafa;
+}
+.moto_rocket {
+  display: flex;
+  background-color: #636363;
+  border-radius: 12px;
+  padding: 20px;
+}
+.moto_rocket img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.moto_rocket p {
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.moto_rocket button {
+  background-color: #fff;
+  margin-top: 18px;
+  padding: 6px 12px;
+  color: #1f242c;
+  font-size: 12px;
+}
+.logP {
+  font-size: 20px;
+}
+.moto-gal-list ul {
+  display: flex;
+}
+.moto-gal-list ul li {
+  padding-right: 24px;
+}
+.moto-gal-list ul li a {
+  color: #c4c0ca;
+}
+.moto-gal-list ul li a:hover {
+  color: #fafafa;
+  border-bottom: #fc525f 2px solid;
+}
+img.pro_mot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+img.pro_mot:not(:nth-child(1)) {
+  margin-left: -10px;
+}
+.moto_header {
+  display: flex;
+  justify-content: space-between;
+}
+.moto_header h2 {
+  font-size: 32px;
+}
+/**/
+.gallery-images {
+  height: 520px;
+  overflow-y: scroll;
+}
+.build {
+  background-image: url(../../assets/image/building.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 440px;
+  position: center;
+  border-radius: 12px;
+}
+.gal-img {
+  border-radius: 12px;
+}
+.lamp {
+  background-image: url(../../assets/image/lamp.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+  position: center;
+  border-radius: 12px;
+  margin-top: 20px;
+}

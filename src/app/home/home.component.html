@@ -1,0 +1,313 @@
+<section class="home row">
+  <div class="main col-12 col-lg-9">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4  p-2">
+        <mat-card>
+          <mat-card-title>
+            <span>Total Applications</span><span>...</span>
+          </mat-card-title>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-6">
+                <p class="num">7956</p>
+                <span class="percentage"><i class="fa fa-long-arrow-right"></i>+3.95%</span>
+              </div>
+              <div class="col-6 ">
+                <div class="">
+                  <svg width="100" height="100">
+                    <path class="progress" d="M 50,50 m 0,-47
+                  a 47,47 0 1 1 0,94
+                  a 47,47 0 1 1 0,-94" stroke-linecap="round" stroke-width="6" fill-opacity="0">
+                    </path>
+                    <path class="pg-2" d="M 50,50 m 0,-47
+                    a 47,47 0 1 1 0,94
+                    a 47,47 0 1 1 0,-94" stroke-linecap="round" stroke-width="6" opacity="1" fill-opacity="0">
+                    </path>
+                    <text x="40" y="50" fill="white">70%</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4  p-2">
+        <mat-card>
+          <mat-card-title>
+            <span>Total Applications</span><span>...</span>
+          </mat-card-title>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-6">
+                <p class="num">4658</p>
+                <span class="percentage"><i class="fa fa-long-arrow-right"></i>+0.6%</span>
+              </div>
+              <div class="col-6 ">
+                <div class="">
+                  <svg width="100" height="100">
+                    <path class="progress" d="M 50,50 m 0,-47
+                  a 47,47 0 1 1 0,94
+                  a 47,47 0 1 1 0,-94" stroke-linecap="round" stroke-width="6" fill-opacity="0">
+                    </path>
+                    <path class="pg-2" d="M 50,50 m 0,-47
+                    a 47,47 0 1 1 0,94
+                    a 47,47 0 1 1 0,-94" stroke-linecap="round" stroke-width="6" opacity="1" fill-opacity="0">
+                    </path>
+                    <text x="40" y="50" fill="white">70%</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 p-2">
+        <mat-card>
+          <mat-card-title>
+            <span>Total Applications</span><span>...</span>
+          </mat-card-title>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-6">
+                <p class="num">1501</p>
+                <span class="percentage" style="color: #fc525f;"><i class="fa fa-long-arrow-right"></i>-0.4%</span>
+              </div>
+              <div class="col-6 ">
+                <div class="">
+                  <svg width="100" height="100">
+                    <path class="progress" d="M 50,50 m 0,-47
+                  a 47,47 0 1 1 0,94
+                  a 47,47 0 1 1 0,-94" stroke-linecap="round" stroke-width="6" fill-opacity="0">
+                    </path>
+                    <path class="pg-2" d="M 50,50 m 0,-47
+                    a 47,47 0 1 1 0,94
+                    a 47,47 0 1 1 0,-94" stroke-linecap="round" stroke-width="6" opacity="1" fill-opacity="0" style="stroke: #fc525f;
+                    stroke-dasharray: 120.186px, 295.31px;
+                    stroke-dashoffset: 0px;">
+                    </path>
+                    <text x="40" y="50" fill="white">40%</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="chart row">
+      <div class=" col-lg-8 ">
+        <div class="chart_canvas_content p-2">
+
+          <div class="row justify-content-between">
+            <h3 class="mr-4 p-4">Applications Received</h3>
+            <div class="canvas_headding">
+              <span>This Year</span>
+              <span>This week</span>
+              <span>Today</span>
+              <span><i class="fa fa-download" aria-hidden="true"></i>Download Request</span>
+              <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+            </div>
+          </div>
+          <div class="chart_canv">
+            <canvas width='630' height='270' baseChart [datasets]="lineChartData" [labels]="lineChartLabels"
+              [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="'line'">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="applications">
+          <div class="app_heading">
+            <h3>Total Applications</h3>
+          </div>
+          <div class="prog_bars">
+            <ul>
+              <li>
+                Applications
+                <div class="progress_border">
+                  <p class="app_progress"></p>
+                </div>
+
+              </li>
+              <li>Short Listed <div class="progress_border">
+                  <p class="short_progress"></p>
+                </div>
+              </li>
+              <li>Rejected <div class="progress_border">
+                  <p class="rejected_progress"></p>
+                </div>
+              </li>
+              <li>On Hold <div class="progress_border">
+                  <p class="on_progress"></p>
+                </div>
+              </li>
+              <li>Finished <div class="progress_border">
+                  <p class="finish_progress"></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="referals mt-4 p-2 row">
+      <div class="refe_content col-lg-8 text-center">
+        <div class="refe_heading row justify-content-between">
+          <p>Referals And Campaign Stats</p>
+          <p>40 campeign seats in total <br> <span>4 campaign seats in last month</span></p>
+        </div>
+        <div class="refe_body row">
+          <div class="col-6 col-lg-3  border-ri8 py-2">
+            <p>Users Reached</p>
+            <p class="pt-3"><i class="fa fa-long-arrow-right"></i> +3.59%</p>
+            <p>7956</p>
+          </div>
+          <div class="col-6 col-lg-3  border-ri8 py-2">
+            <p>Referals</p>
+            <p class="pt-3"><i class="fa fa-long-arrow-right"></i> +3.59%</p>
+            <p>7956</p>
+          </div>
+          <div class="col-6 mt-3 mt-lg-0 col-lg-3  border-ri8 py-2">
+            <p>Shares</p>
+            <p class="pt-3"><i class="fa fa-long-arrow-right"></i> +3.59%</p>
+            <p>7956</p>
+          </div>
+          <div class="col-6 mt-3 mt-lg-0 col-lg-3  border-ri8 py-2">
+            <p>Applications</p>
+            <p class="pt-3"><i class="fa fa-long-arrow-right"></i> +3.59%</p>
+            <p>7956</p>
+          </div>
+        </div>
+        <div class="refe_foot row my-2 mx-auto">
+          <button class="col-12 col-lg-5 btn btn-primary">Start a new campaign now</button>
+          <p class="col-12 col-lg-2"></p>
+          <button class="col-12 col-lg-5 btn btn-danger">Pause all running campaigns</button>
+        </div>
+      </div>
+      <div class=" col-lg-4 mt-3 mt-lg-0">
+        <div class="refe_piechart p-2">
+          <h3 class="px-2">Open positions by department</h3>
+          <div class="chart-wrapper pb-5">
+            <canvas baseChart height="180" weight="180" [data]="doughnutChartData" [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType" [colors]="doughnutChartColors">
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class=" col-12 col-lg-3 p-0">
+    <div class="aside">
+      <div class="aside_title">
+        <h3 class="text-center pt-5">Hello John Bayer,<br>
+          You have New Application Today</h3>
+      </div>
+      <div class="aside-bg-img"></div>
+      <div class="chat">
+        <div class="chat_head">
+          <h2 class="py-3 pl-4">New Applicants</h2>
+        </div>
+        <div class="chat_list">
+          <ul>
+            <li>
+              <a href="" class="row justify-content-around">
+                <span class="row">
+                  <p class="fa fa-user-o" aria-hidden="true"></p>
+                  <p class="ml-3">Rosie Metts <br>
+                    <small class="text-primary" style="font-size: 10px;">IOS Developer</small>
+                  </p>
+                </span>
+                <p>
+                  <i class="fa fa-commenting mr-3" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </p>
+
+              </a>
+            </li>
+            <li>
+              <a href="" class="row justify-content-around">
+                <span class="row">
+                  <p class="fa fa-user-o" aria-hidden="true"></p>
+                  <p class="ml-3">James Scott
+                    <br>
+                    <small class="text-primary" style="font-size: 10px;">NodeJS Developer</small>
+                  </p>
+                </span>
+                <p>
+                  <i class="fa fa-commenting mr-3" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </p>
+
+              </a>
+            </li>
+            <li>
+              <a href="" class="row justify-content-around">
+                <span class="row">
+                  <p class="fa fa-user-o" aria-hidden="true"></p>
+                  <p class="ml-3">Jamie Laurenson
+                    <br>
+                    <small class="text-primary" style="font-size: 10px;">
+                      Marketing Manager</small>
+                  </p>
+                </span>
+                <p>
+                  <i class="fa fa-commenting mr-3" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </p>
+
+              </a>
+            </li>
+            <li>
+              <a href="" class="row justify-content-around">
+                <span class="row">
+                  <p class="fa fa-user-o" aria-hidden="true"></p>
+                  <p class="ml-3">Elizabeth Hurton <br>
+                    <small class="text-primary" style="font-size: 10px;">
+                      Junior UX Designer</small>
+                  </p>
+                </span>
+                <p>
+                  <i class="fa fa-commenting mr-3" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </p>
+
+              </a>
+            </li>
+            <li>
+              <a href="" class="row justify-content-around">
+                <span class="row">
+                  <p class="fa fa-user-o" aria-hidden="true"></p>
+                  <p class="ml-3">Danny Watson <br>
+                    <small class="text-primary" style="font-size: 10px;">IOS Developer</small>
+                  </p>
+                </span>
+                <p>
+                  <i class="fa fa-commenting mr-3" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </p>
+
+              </a>
+            </li>
+            <li>
+              <a href="" class="row justify-content-around">
+                <span class="row">
+                  <p class="fa fa-user-o" aria-hidden="true"></p>
+                  <p class="ml-3">Reha Scarlett <br>
+                    <small class="text-primary" style="font-size: 10px;">IOS Developer</small>
+                  </p>
+                </span>
+                <p>
+                  <i class="fa fa-commenting mr-3" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </p>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
