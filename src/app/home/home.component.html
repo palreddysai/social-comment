@@ -1,5 +1,6 @@
 <section class="home row">
   <div class="main col-12 col-lg-9">
+    <!-- applications info -->
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4  p-2">
         <mat-card>
@@ -99,7 +100,7 @@
       <div class=" col-lg-8 ">
         <div class="chart_canvas_content p-2">
 
-          <div class="row justify-content-between">
+          <div class="row justify-content-around">
             <h3 class="mr-4 p-4">Applications Received</h3>
             <div class="canvas_headding">
               <span>This Year</span>
@@ -109,14 +110,15 @@
               <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
             </div>
           </div>
+          <!-- line chart -->
           <div class="chart_canv">
-            <canvas width='630' height='270' baseChart [datasets]="lineChartData" [labels]="lineChartLabels"
+            <canvas width='630' height='240' baseChart [datasets]="lineChartData" [labels]="lineChartLabels"
               [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="'line'">
             </canvas>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 mt-3 mt-lg-0">
         <div class="applications">
           <div class="app_heading">
             <h3>Total Applications</h3>
@@ -157,6 +159,7 @@
           <p>Referals And Campaign Stats</p>
           <p>40 campeign seats in total <br> <span>4 campaign seats in last month</span></p>
         </div>
+        <!-- referals -->
         <div class="refe_body row">
           <div class="col-6 col-lg-3  border-ri8 py-2">
             <p>Users Reached</p>
@@ -185,6 +188,7 @@
           <button class="col-12 col-lg-5 btn btn-danger">Pause all running campaigns</button>
         </div>
       </div>
+      <!-- doughnut chart to display applications -->
       <div class=" col-lg-4 mt-3 mt-lg-0">
         <div class="refe_piechart p-2">
           <h3 class="px-2">Open positions by department</h3>
@@ -198,6 +202,7 @@
 
     </div>
   </div>
+  <!-- sidebar -->
   <div class=" col-12 col-lg-3 p-0">
     <div class="aside">
       <div class="aside_title">

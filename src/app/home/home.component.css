@@ -81,7 +81,7 @@ mat-card:hover .pg-2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 24px 0;
+  padding: 14px 0;
 }
 .canvas_headding span {
   padding-right: 24px;

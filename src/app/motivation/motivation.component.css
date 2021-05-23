@@ -5,7 +5,7 @@ section {
 .motivation {
   background-color: #2c323b;
   border-radius: 20px;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -69,6 +69,7 @@ section {
 }
 .moto-gal-list ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .moto-gal-list ul li {
   padding-right: 24px;
@@ -90,6 +91,7 @@ img.pro_mot:not(:nth-child(1)) {
 }
 .moto_header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .moto_header h2 {

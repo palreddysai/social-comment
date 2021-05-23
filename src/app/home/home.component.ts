@@ -10,6 +10,7 @@ import { Color, Label, MultiDataSet } from 'ng2-charts';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+  /*Line chart data*/
   lineChartData: ChartDataSets[] = [
     { data: [10, 14, 23,36,27,21,42 ], label: 'Applications' },
     { data: [ 12, 19, 28, 37, 18,36], label: 'No. Of Applications' }
